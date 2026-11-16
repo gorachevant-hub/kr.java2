@@ -1,0 +1,5 @@
+public final class Product {
+ private final String id,name; private final double price;
+ public Product(String id,String name,double price){if(id==null||id.isBlank()||name==null||name.isBlank()||!Double.isFinite(price)||price<=0)throw new IllegalArgumentException("Товар");this.id=id;this.name=name;this.price=price;}
+ public String getId(){return id;}public String getName(){return name;}public double getPrice(){return price;}
+}
